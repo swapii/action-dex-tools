@@ -9,4 +9,6 @@ runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
+    - sh
+    - -c
     - ${{ inputs.command }}
