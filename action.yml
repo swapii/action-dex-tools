@@ -1,0 +1,12 @@
+name: 'dex-tools'
+description: 'Tools for working with DEX files (also known as dex2jar)'
+inputs:
+  command:
+    description: 'Command'
+    required: true
+    default: 'd2j-dex2jar'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.command }}
